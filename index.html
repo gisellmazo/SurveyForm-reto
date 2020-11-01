@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Encuesta Gustos Musicales</h1>
+        <p id="description">Queremos aprender mas sobre tus gustos musicales</p>
+    </header>
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Nombre</label>
+            <input id="name" type="text" name="name"  class="form-control input" placeholder="Introduce tu nombre" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email" id="email-label">Correo Electrónico</label>
+            <input id="email" type="email" name="email"  class="form-control input" placeholder="Introduce tu correo" required>
+        </div>
+
+        <div class="form-group">
+            <label for="number" id="number-label">Edad</label>
+            <input id="number" type="number" name="age" min="10" max="99" class="form-control input" placeholder="Introduce tu edad">
+        </div>
+
+        <div class="form-group">
+            <p class="question">¿Cuál es tu genero de música favorita?</p>
+
+            <select id="dropdown"  name="genre" class="form-control">
+                <option disabled selected value>Selecciona tu genero favorito</option>
+                <option value="Clasica">Clasica</option>}
+                <option value="Pop">Pop</option>
+                <option value="RnB">RnB</option>
+                <option value="Reggaeton">Reggaeton</option>
+                <option value="Rock">Rock</option>
+                <option value="Jazz">Jazz</option>
+                <option value="EDM">EDM</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p class="question">¿Cuántas horas al día pasa escuchando música?</p>
+
+            <label><input name="music-hours" value="1 a 2 horas" type="radio" class="input-radio" checked> De 1 a 2 horas</label>
+            <label><input name="music-hours" value="3 a 5 horas" type="radio" class="input-radio" checked> De 3 a 5 horas</label>
+            <label><input name="music-hours" value="mas 6 horas" type="radio" class="input-radio" checked> Más de 6 horas</label>
+        </div>
+
+        <div  class="form-group">
+            <p class="question">Selecciona a todos los artistas que conozcas o escuchas</p>
+
+            <label ><input name="artist" type="checkbox" value="Taylor Swift" class="input-checkbox"> Taylor Swift</label>
+            <label ><input name="artist" type="checkbox" value="Kurt Cobain" class="input-checkbox"> Kurt Cobain</label>
+            <label ><input name="artist" type="checkbox" value="Michael Jackson" class="input-checkbox"> Michael Jackson</label>
+            <label ><input name="artist" type="checkbox" value="Beethoven" class="input-checkbox"> Beethoven</label>
+            <label ><input name="artist" type="checkbox" value="Shakira" class="input-checkbox"> Shakira</label>
+            <label ><input name="artist" type="checkbox" value="Freddie Mercury" class="input-checkbox"> Freddie Mercury</label>
+            <label ><input name="artist" type="checkbox" value="Maluma" class="input-checkbox"> Maluma</label>
+            <label ><input name="artist" type="checkbox" value="Mozart" class="input-checkbox"> Mozart</label>
+            <label ><input name="artist" type="checkbox" value="Selena Gomez" class="input-checkbox"> Selena Gomez</label>
+            <label ><input name="artist" type="checkbox" value="Madonna" class="input-checkbox"> Madonna</label>
+            <label ><input name="artist" type="checkbox" value="David Guetta" class="input-checkbox"> David Guetta</label>
+            <label ><input name="artist" type="checkbox" value="Louis Armstrong" class="input-checkbox"> Louis Armstrong</label>
+            <label ><input name="artist" type="checkbox" value="Beethoven" class="input-checkbox"> Daddy Yankee</label>
+        </div>
+
+        <div class="form-group">
+            <p class="question">Cuentanos ¿Cuál es tu canción favorita?</p>
+            <textarea name="favoritesong" id="favsong" class="input-textarea" placeholder="Tu canción favorita..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <button id="submit" type="submit" class="submit-button">Enviar</button>
+        </div>
+
+        
+    </form>
+    
+</body>
+</html>
